@@ -8,11 +8,11 @@ from collections import defaultdict
 from PyQt5.QtCore import QTimer
 from PyQt5.QtGui import QBrush, QColor, QPen, QPixmap
 from PyQt5.QtWidgets import (QFormLayout, QGraphicsScene, QGraphicsView, QHBoxLayout, QLabel, QLineEdit, QPushButton,
-                             QVBoxLayout, QWidget, QCheckBox)
+                             QVBoxLayout, QWidget, QCheckBox, QDialog)
 
 from maze import Game, Maze
 
-class GameViewer(QWidget):
+class GameViewer(QDialog):
     ''' The main game viewer GUI '''
 
     # Define the colours used for drawing everything
